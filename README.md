@@ -1,24 +1,27 @@
-# home-assesment
+## Oliver Space Take-Home Instructions
 
-## Project setup
-```
-npm install
-```
+Your mission, if you choose to accept it, is to build out a mock of a product reviews flow. 
+This includes a page for users to submit their reviews as well as a page to read reviews.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+REQUIREMENTS:
+- Create a page where a user can view all of the reviews for a given product
+    - This page should also display the average rating for this product
+- Create a page where a user can review a given product with the following information:
+    - Their name (the author)
+    - A star rating
+    - Headline text (a title for their review)
+    - The body of the review (a longer paragraph)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Please spend 2 hours completing this task to whatever extent you can finish, but don't
+go over time. The expectation is NOT that you will get through all of the requirements, so please add notes on anything else you would have done with more time. Feel free to use any third-party libraries that you find helpful. Please spend some of your time on styling - since we are a consumer-facing company, we care about UI quality. It's ok to sacrifice some functionality for looks (though we leave it up to you to determine what you want to trade off).
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Running the app
+Start the mock JSON server on port 3004 using `json-server --watch db.json`
+Start the vue app on port 3000 using `npm run serve`
+You can then make requests to http://localhost:3004/products, http://localhost:3004/reviews or http://localhost:3004/products/:id/reviews using axios, or any of your preferred methods
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+More info on json-server [here](https://www.npmjs.com/package/json-server)
+
+This project was bootstrapped with [vue cli](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
+
+Best of luck! Feel free to email <a href="mailto:frontend-eng@oliver.space">frontend-eng@oliver.space</a> if you have any questions while you're completing the exercise. We're happy to help :)
